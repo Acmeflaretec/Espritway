@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Fav Icon -->
+    <link href="img/espritway-img/logo.jpeg" rel="icon">
+    
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -44,73 +47,7 @@
 
 
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid header-top">
-        <div class="container d-flex align-items-center">
-            <div class="d-flex align-items-center h-100">
-                <a href="#" class="navbar-brand" style="height: 125px;">
-                    <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Espritway</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-            </div>
-            <div class="w-100 h-100">
-                <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
-                    <div class="row gx-0 align-items-center">
-                        <div class="col-lg-8 text-center text-lg-center mb-lg-0">
-                            <div class="d-flex flex-wrap">
-
-                            </div>
-                        </div>
-                        <div class="col-lg-4 text-center text-lg-end">
-                            <div class="d-flex justify-content-end">
-                                <div class="d-flex border-end border-primary pe-3">
-                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                    <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-
-                                <div class="ps-3">
-                                    <a href="mailto:info@espritway.com"><i
-                                            class="fas fa-envelope text-primary me-2"></i>info@espritway.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
-                    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
-                        <a href="#" class="navbar-brand-2">
-                            <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Espritway</h1>
-                            <!-- <img src="img/logo.png" alt="Logo"> -->
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <div class="navbar-nav mx-0 mx-lg-auto bg-white">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Service</a>
-                                <a href="blog.html" class="nav-item nav-link">Team</a>
-                                <a href="blog.html" class="nav-item nav-link">Testimonial</a>
-                                <a href="blog.html" class="nav-item nav-link">Gallery</a>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-
-
-                                <div class="nav-btn ps-3">
-
-                                    <a href="#" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar & Hero End -->
+  
 
 
 
@@ -182,36 +119,38 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-5 wow fadeInRight" data-wow-delay="0.4s">
-                    <form>
+                    <form id="submit-form">
                         <div class="row g-4 mb-5">
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control border-0" id="email"
+                                    <input type="email" class="form-control border-0" id="email" name="email"
                                         placeholder="Your Email">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
-                                    <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
+                                    <input type="phone" class="form-control border-0" id="phone" name="phone"
+                                       " placeholder="Phone">
                                     <label for="phone">Your Phone</label>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-floating">
                                     <textarea class="form-control border-0" placeholder="Leave a message here"
-                                        id="message" style="height: 125px"></textarea>
+                                        id="message" name="message" style="height: 125px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                <button id="submit-button" type="submit" class="btn btn-primary w-100 py-3">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>
@@ -229,95 +168,7 @@
     <!-- Contact End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
-        <div class="container py-5">
-
-            <div class="row g-5">
-
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Quick Links</h4>
-                        <a href="#">Home</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Service</a>
-                        <a href="#">Team</a>
-                        <a href="#">Testimonial</a>
-                        <a href="#">Gallery</a>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Our Services</h4>
-                        <a href="#">Manpower Placement</a>
-                        <a href="#">Training Programs</a>
-                        <a href="#">Educational Consultancy</a>
-                        <a href="#">Foreign Placement</a>
-                        <a href="#">Digital Marketing</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Contact Info</h4>
-                        <a href="tel:+919852630553"><i class="fas fa-phone text-primary me-2"></i> +91 9852630553</a>
-                        <a href="tel:+918804713337"><i class="fas fa-phone text-primary me-2"></i> +91 8804713337</a>
-
-
-                        <a href="#"><i class="fa fa-map-marker-alt text-primary me-2"></i>Head Office: Scheme No 140,
-                            Greater Brijeshwari Indore Madhya Pradesh 452016</a>
-                        <a href="mailto:info@espritway.com"><i
-                                class="fas fa-envelope text-primary me-2"></i>info@espritway.com</a>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item d-flex flex-column">
-                        <h4 class="text-white mb-4">Contact Info</h4>
-
-                        <a href="tel:+918770812199"><i class="fas fa-phone text-primary me-2"></i> +91 8770812199</a>
-                        <a href="tel:+916200621155"><i class="fas fa-phone text-primary me-2"></i> +91 6200621155</a>
-                        <a href="#"><i class="fa fa-map-marker-alt text-primary me-2"></i>Regional Office: 3rd Floor,
-                            SBI ATM Kachhari Station Road, Chapra Bihar 841301</a>
-
-                        <a href="mailto:info@espritway.com"><i
-                                class="fas fa-envelope text-primary me-2"></i>info@espritway.com</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Espritway Services Pvt. Ltd.</a>, All
-                        rights
-                        reserved.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end text-body">
-                    Designed By <a class="border-bottom text-white" href="https://www.acmeflaretech.com/">Acmeflare
-                        Technologies</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
-
-
-
-
-
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
-
+   
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
