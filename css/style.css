@@ -118,7 +118,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: var(--bs-dark);
+  background: #f68a0a;;
   z-index: 1;
 }
 
@@ -183,7 +183,7 @@
     height: 600px;
     top: -200px;
     right: 18px;
-    background: var(--bs-dark);
+    background: #f68a0a;
     transform: rotate(-18deg);
     z-index: -1;
   }
@@ -196,7 +196,7 @@
     height: 600px;
     top: -200px;
     right: 18px;
-    background: var(--bs-primary);
+    background: white;
     transform: rotate(-18deg);
     z-index: -1;
   }
@@ -372,7 +372,7 @@ border-radius: 10px;
     height: 600px;
     top: -200px;
     right: 18px;
-    background: var(--bs-dark);
+    background: #f68a0a;;
     transform: rotate(-18deg);
     z-index: -1;
   }
@@ -385,7 +385,7 @@ border-radius: 10px;
     height: 600px;
     top: -200px;
     right: 18px;
-    background: var(--bs-primary);
+    background: white;
     transform: rotate(-18deg);
     z-index: -1;
   }
